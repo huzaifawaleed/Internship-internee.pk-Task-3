@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Carousel</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .slider{
+    margin-top: 20px;
+    position: relative;
+    width: 43%;
+    overflow: hidden;
+   }
+   .slides{
+    
+display: flex;
+width: 100%;
+   }
+   .slides img{
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+   }
+   button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+@media (max-width: 1000px) {
+    .slider {
+    
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider {
+       
+        width: 350px;
+    }
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+
+<div class="slider">
+    <div class="slides">
+        <img src="./img 1.jpg" class="img" alt="">
+        <img src="img 2.jpg" class="img"  alt="">
+        <img src="./img 3.jpg" class="img" alt="">
+        <img src="./download.jpeg" class="img" alt="">
+        <img src="./download (6).jpeg" class="img" alt="">
+    </div>
+
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
